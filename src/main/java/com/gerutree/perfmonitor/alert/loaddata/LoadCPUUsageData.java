@@ -18,7 +18,7 @@ public class LoadCPUUsageData {
 	  CommandLineRunner initCPUUsageDatabase(CPUUsageRepo cpuUsageRepo) {
 
 	    return args -> {
-	      log.info("Preloading " + cpuUsageRepo.save(new CPUUsage("11.00.99.99", "windows", 17)));
+	      log.info("Preloading " + cpuUsageRepo.save(new CPUUsage("11.00.99.99", "windows", 17.00)));
 	    };
 	  }
 

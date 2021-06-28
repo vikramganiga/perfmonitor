@@ -1,0 +1,11 @@
+
+http://localhost:8080/cpuusages
+
+{
+        "cpuusageID": "45359524-daab-46aa-8d85-4a56494221bb",
+        "device": "11.1.1.1",
+        "connector": "windows connector",
+        "usage": 45,
+        "createdDate": "2021-05-16T14:47:34.928+00:00",
+        "lastModifiedDate": "2021-05-16T14:47:34.928+00:00"
+    }

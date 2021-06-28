@@ -34,9 +34,9 @@ public class CPUUsage {
 
 	String device;
 	String connector;
-	Integer usage;
+	Double usage;
 
-	public CPUUsage(String device, String connector, Integer usage) {
+	public CPUUsage(String device, String connector, Double usage) {
 		super();
 		this.device = device;
 		this.connector = connector;
