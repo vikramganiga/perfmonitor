@@ -1,21 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  
-  <parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.4.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
-  </parent>
-	
-  <groupId>com.gerutree</groupId>
-  <artifactId>perfmonitor</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Performance Monitor</name>
-  <description>Performance Monitor</description>
-  
+	</parent>
+
+	<groupId>com.gerutree</groupId>
+	<artifactId>perfmonitor</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Performance Monitor</name>
+	<description>Performance Monitor</description>
+
 	<properties>
-		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>17</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<junit-platform.version>5.3.1</junit-platform.version>
+
 	</properties>
 
 	<dependencies>
@@ -53,7 +59,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.10</version>
+			<version>1.18.20</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -64,8 +70,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.gerutree.perfmonitor.alert.PerfMonitoring</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
